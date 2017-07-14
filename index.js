@@ -1,4 +1,5 @@
 /* eslint-disable prefer-promise-reject-errors */
+const http = require('http');
 const https = require('https');
 const {URL} = require('url');
 const qs = require('querystring');
@@ -48,7 +49,9 @@ function pet(url, options) {
 
 		console.log(payload);
 
-		const request = https.request(payload, msg => {
+		const provider = payload.protocol === 'https:' ? https : http;
+
+		const request = provider.request(payload, msg => {
 			let totalLength = 0;
 			const buffers = [];
 
