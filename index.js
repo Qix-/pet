@@ -47,8 +47,6 @@ function pet(url, options) {
 			}
 		}
 
-		console.log(payload);
-
 		const provider = payload.protocol === 'https:' ? https : http;
 
 		const request = provider.request(payload, msg => {
