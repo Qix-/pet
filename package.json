@@ -1,0 +1,29 @@
+{
+  "name": "pet",
+  "description": "Stupidly simple and lightweight HTTP requests",
+  "version": "0.1.0",
+  "author": "Josh Junon <josh@junon.me>",
+  "keywords": [
+    "http",
+    "request",
+    "post",
+    "get",
+    "json",
+    "put",
+    "xhr",
+    "ajax"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "pretest": "xo",
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": "qix-/pet",
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "xo": "^0.18.2"
+  }
+}
